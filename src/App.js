@@ -28,7 +28,6 @@ function App() {
           <Questions />
           <Footer>
             <Timer />
-
             <NextButton />
           </Footer>
         </>}
