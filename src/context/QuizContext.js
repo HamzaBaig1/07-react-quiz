@@ -80,7 +80,8 @@ function QuizProvider({ children }) {
     useEffect(function () {
         async function fetchData() {
             try {
-                const res = await fetch('http://localhost:8000/questions');
+                // const res = await fetch('http://localhost:8000/questions');
+                const res = await fetch('https://oxidized-buttered-dedication.glitch.me/questions');
                 const data = await res.json();
                 dispatch({ type: 'dataRecieved', payLoad: data })
             } catch (err) {
